@@ -1,0 +1,10 @@
+2023-03-29 20:25:21.018 UTC [17072] LOG:  starting PostgreSQL 15.2 (Debian 15.2-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+2023-03-29 20:25:21.019 UTC [17072] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-03-29 20:25:21.019 UTC [17072] LOG:  listening on IPv6 address "::", port 5432
+2023-03-29 20:25:21.061 UTC [17072] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2023-03-29 20:25:21.108 UTC [17075] LOG:  database system was shut down at 2023-03-29 20:23:26 UTC
+2023-03-29 20:25:21.129 UTC [17072] LOG:  database system is ready to accept connections
+2023-03-29 20:27:08.674 UTC [17491] ERROR:  syntax error at or near "password" at character 35
+2023-03-29 20:27:08.674 UTC [17491] STATEMENT:  ALTER USER postgres WITH PASSWORD password;
+2023-03-29 20:30:21.189 UTC [17073] LOG:  checkpoint starting: time
+2023-03-29 20:30:25.617 UTC [17073] LOG:  checkpoint complete: wrote 45 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.261 s, sync=0.070 s, total=4.428 s; sync files=13, longest=0.020 s, average=0.006 s; distance=254 kB, estimate=254 kB
