@@ -8,5 +8,5 @@ RUN python3 -m venv /opt/venv
 COPY requirements.txt .
 RUN . /opt/venv/bin/activate && pip install -r requirements.txt
 COPY myApp.py .
-ENTRYPOINT [ "python" ]
-CMD ["myApp.py"]
+EXPOSE 5000
+CMD ["python", "index.py"]
