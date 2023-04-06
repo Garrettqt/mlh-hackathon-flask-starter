@@ -1,4 +1,12 @@
-FROM postgres:15.2
-RUN echo virtualenv venv
-RUN echo source venv/bin/activate
-RUN echo pip install -r requirements.txt
+FROM python:3
+RUN apt update
+RUN apt install sudo
+RUN apt update
+RUN sudo apt install -y virtualenv
+RUN apt update
+RUN python3 -m venv /opt/venv
+COPY requirements.txt .
+RUN . /opt/venv/bin/activate && pip install -r requirements.txt
+COPY myApp.py .
+EXPOSE 5000
+CMD ["python", "index.py"]
